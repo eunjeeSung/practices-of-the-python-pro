@@ -41,10 +41,9 @@ def print_options():
         for i, option in enumerate(OPTIONS)))
 
 def get_human_choice():
-    return OPTIONS[int(input('Enter the number of your choice: ')) - 1]
-    
-def print_human_choice(human_choice):
+    human_choice = OPTIONS[int(input('Enter the number of your choice: ')) - 1]
     print(f'You chose {human_choice}')
+    return human_choice
 
 def get_computer_choice():
     computer_choice = random.choice(OPTIONS)
